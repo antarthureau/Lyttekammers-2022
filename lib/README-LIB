@@ -1,0 +1,2 @@
+Move Arduino_Pd into the local externals directory of the system.
+This patch must be declared in the patch with a "declare /path/" object
