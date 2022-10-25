@@ -1,0 +1,41 @@
+MACHINE-SETUP
+RPi 2B+ or 3B+ with Raspbian 32bits running;
+User is mike, password is standard linux;
+A USB flashdrive is connected and contains media files;
+A Beetle (Arduino Leonardo) is used to get serial data from a buton;
+
+PUREDATA
+Puredata vanilla + GUI should be installed;
+Comport external library should be installed with Deken in
+/home/mike/Documents/Pd/externals";
+"github.com/alexdrymonitis/Arduino_Pd" should be placed in
+/home/mike/Documents/Pd/externals", then declared in the patch.
+
+BEETLE-ARDUINO
+The beetle is a small form-factor Arduino Leonardo microcontroller;
+It is programmed to generate a toggle (toggle 0 or 1) via serial to Pd;
+Connected to the beetle digital pin 9 is a push-button, wired to
+ground with a 10K resistor (pull-down);
+
+MEDIA
+LTKM-MEDIA directory/path: /media/mike/LTKM-MEDIA;
+The media files are located on a flashdrive (LTKM-MEDIA)
+To update the files, simply put/replace .WAV files  on the drives;
+Files should be named "mediaX.wav" (replace x by integer);
+
+AUTOSTART
+Autostart directory/path:
+/home/mike/.config/autostart/lyttekammers.pd-patch.desktop
+The autostart is a .desktop file;
+
+---------------
+[Desktop Entry]
+Type=Application
+Name=LYTTEKAMMERS
+Exec=pd /home/mike/Desktop/lyttekammers-pd-patch.pd
+---------------
+
+If the name of the patch is changed during an update,
+it must be changed in the autostart file as well. Example:
+Exec= pd /home/mike/Desktop/newPatch.pd
+
