@@ -5,6 +5,7 @@ A USB flashdrive is connected and contains media files;
 A Beetle (Arduino Leonardo) is used to get serial data from a buton;
 
 PUREDATA
+Path/directory: /home/mike/Desktop/lyttekammers-pd-patch.pd
 Puredata vanilla + GUI should be installed;
 Comport external library should be installed with Deken in
 /home/mike/Documents/Pd/externals";
