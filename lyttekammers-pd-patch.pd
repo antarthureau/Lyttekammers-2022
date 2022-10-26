@@ -17,7 +17,7 @@
 #X obj 792 745 / 127;
 #X floatatom 792 774 5 0 0 0 - - -;
 #X obj 792 602 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 12700 1;
+-1 -1 0 1;
 #X obj 437 717 route bang;
 #X obj 377 343 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -154,7 +154,7 @@ need to convert the output to dB with rmstodb and also subtract by
 #X obj 148 345 del 2000;
 #X obj 187 395 del 500;
 #X obj 148 480 spigot;
-#X obj 187 458 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 187 458 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 247 415 del 2000;
 #X msg 247 438 1;
@@ -275,6 +275,7 @@ need to convert the output to dB with rmstodb and also subtract by
 #X connect 88 0 87 0;
 #X connect 89 0 87 0;
 #X connect 90 0 89 0;
+#X connect 90 0 88 0;
 #X connect 91 0 70 1;
 #X connect 92 0 72 0;
 #X connect 93 0 13 0;
