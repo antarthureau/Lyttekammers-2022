@@ -7,9 +7,7 @@ A Beetle (Arduino Leonardo) is used to get serial data from a buton;
 PUREDATA
 Path/directory: /home/mike/Desktop/LTKM.pd
 Puredata vanilla + GUI should be installed;
-Comport external library should be installed with Deken in
-/home/mike/Documents/Pd/externals";
-"github.com/alexdrymonitis/Arduino_Pd" should be placed in
+Comport qnd Pduino external libraries should be installed with Deken in
 /home/mike/Documents/Pd/externals", then declared in the patch.
 
 BEETLE-ARDUINO
