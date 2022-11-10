@@ -24,24 +24,29 @@ Files should be named "mediaX.wav" (replace x by integer);
 
 AUTOSTART
 Autostart directory/path: /home/mike/.config/autostart/LTKM.desktop
-The autostart is a .desktop file, containting a bash script
+The autostart are 2 .desktop files, one opening the PD patch;
+The other starting a bash script deleting empty /media/mike locations
 ---------------
 [Desktop Entry]
 Type=Application
-Name=LTKM
+Name=bash
 Exec=bash /home/mike/Desktop/autostartLTKM.sh
+---------------
+[Desktop Entry]
+Type=Application
+Name=LYKM
+Exec=pd /home/mike/Desktop/lyttekammers.pd
 ---------------
 
 The bash script takes care of removing any corrupted, empty directories in /media/mike/
-sleeps 2 seconds before opening the Pd patch;
 ---------------
 #bin!/bash
 cd /media/mike
 sudo find . -type d -empty -print -delete
-sleep 2
-pd /home/mike/Desktop/LTKM.pd
 ---------------
 
 If the name of the patch is changed during an update,
 it must be changed in the bash script as well. Example:
 pd /home/mike/Desktop/newPatch.pd
+
+The bash script is located on the desktop.
