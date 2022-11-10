@@ -41,7 +41,7 @@ sleeps 2 seconds before opening the Pd patch;
 cd /media/mike
 sudo find . -type d -empty -print -delete
 sleep 2
-pd home/mike/Desktop/LTKM.pd
+pd /home/mike/Desktop/LTKM.pd
 ---------------
 
 If the name of the patch is changed during an update,
