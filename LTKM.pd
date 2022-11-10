@@ -183,7 +183,7 @@ need to convert the output to dB with rmstodb and also subtract by
 ;
 #X obj 406 210 declare -path /home/mike/Documents/Pd/externals/pduino
 ;
-#X obj 354 106 arduino 1;
+#X obj 354 106 arduino 0;
 #X msg 414 73 pinMode 9 0;
 #X msg 354 73 open 0;
 #X obj 354 49 loadbang;
