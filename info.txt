@@ -7,7 +7,7 @@ A Beetle (Arduino Leonardo) is used to get serial data from a buton;
 PUREDATA
 Path/directory: /home/mike/Desktop/LTKM.pd
 Puredata vanilla + GUI should be installed;
-Comport qnd Pduino external libraries should be installed with Deken in
+Comport and Pduino external libraries should be installed with Deken in
 /home/mike/Documents/Pd/externals", then declared in the patch.
 
 BEETLE-ARDUINO
@@ -29,7 +29,7 @@ and launches the patch.
 ---------------
 [Desktop Entry]
 Type=Application
-Name=bash
+Name=LTKM
 Exec=bash /home/mike/Desktop/autostartLTKM.sh
 ---------------
 
